@@ -14,27 +14,8 @@ class MySearch extends StatelessWidget {
                     centerTitle: true,
                     ),
                     body: SearchConter(),
-                    floatingActionButton:FloatingActionButton(
-                      tooltip: "back",
-                      onPressed: (){ Navigator.pop(context);},
-                      child: Icon(Icons.arrow_back_ios),
-                    ),
-                    // actions:[
-                    //     IconButton(
-                    //     icon: Icon(Icons.search),
-                    //     onPressed: (){
-                    //       Navigator.push(context, MaterialPageRoute(builder: (BuildContext ctx){
-                    //         return Scaffold(
-                    //           appBar: AppBar(title: Text("搜索: "+ _controller.text),),
-                    //           body:  MovieList(mt: "search",query: _controller.text,),
-                    //         );
-                    //       }));
-                    //     },
-                    //   ),
-                    // ],
                 );
               }));
-
           },);
   }
 }
