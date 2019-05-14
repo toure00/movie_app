@@ -13,7 +13,8 @@ class MySearch extends StatelessWidget {
                     title:Text("搜索"),
                     centerTitle: true,
                     ),
-                    body: SearchConter(),
+                    // body: SearchConter(),
+                    body: Center(child: Text("豆瓣api关闭,搜索功能失效",style: TextStyle(fontSize:20),),),
                 );
               }));
           },);

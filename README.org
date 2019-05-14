@@ -1,0 +1,5 @@
+* movie_app
+** 简介
+这是一个使用豆瓣api的练手flutter项目 , 在昨天(2019-5-13), 豆瓣api疑似关闭 , 于是从网上找了一个豆瓣apikey , 如果项目不可用 , 请尝试更换apikey , 位置在 [[./lib/resource/movie_api_provider.dart][这里]]
+** 截图预览
+[[./screenshot/2.gif]]

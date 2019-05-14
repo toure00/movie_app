@@ -64,20 +64,7 @@ class MovieList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     _getController();
-    switch (this.mt) {
-      case "coming_soon":
-      movieListBloc = comingSoon;
-      break;
-      case "in_theaters":
-      movieListBloc = inTheaters;
-      break;
-      case "top250":
-      movieListBloc = top250;
-      break;
-      case "search":
-      movieListBloc = MovieListBloc();
-      break;
-    }
+    movieListBloc = getMovieListBloc(this.mt);
     movieListBloc.fetchMovieList(this.mt,this.query);
     return StreamBuilder(
       stream: movieListBloc.movieList,

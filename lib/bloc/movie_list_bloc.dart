@@ -39,15 +39,13 @@ class MovieListBloc extends BaseBloc<MovieListModel> {
         }
       }
     }
-
-  @override
-  dispose() {
-    print("销毁中");
-    fetcher.close();
-  }
 }
 
-
-final comingSoon = MovieListBloc();
-final inTheaters= MovieListBloc();
-final top250= MovieListBloc();
+Map bloc_map = Map();
+getMovieListBloc (key){
+  if(bloc_map.containsKey(key)){
+    return bloc_map[key];
+  }
+  bloc_map[key] = MovieListBloc();
+  return bloc_map[key];
+}

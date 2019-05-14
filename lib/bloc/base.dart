@@ -7,7 +7,6 @@ abstract class BaseBloc<T>{
   final fetcher = PublishSubject<T>();
 
   dispose(){
-    print("销毁了....");
     fetcher.close();
   }
 }
